@@ -3,7 +3,7 @@ import {IOrder} from "./order.interface";
 import {userSchema} from "../User/user.model";
 import {productSchema} from "../Product/product.model";
 
-const orderSchema = new Schema<IOrder>({
+export const orderSchema = new Schema<IOrder>({
 	customer: userSchema,
 	product: productSchema,
 	quantity: {
