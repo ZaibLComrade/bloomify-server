@@ -1,5 +1,6 @@
 import { Schema, model } from "mongoose";
 import { IProduct } from "./product.interface";
+import {categorySchema} from "../Category/category.modle";
 
 const productSchema = new Schema<IProduct>({
 	title: {
@@ -10,7 +11,7 @@ const productSchema = new Schema<IProduct>({
 		type: String,
 		requried: [true, "Image link is required"],
 	},
-	category: {},
+	category: categorySchema, // TODO: Update Category Schema
 	price: {
 		type: Number,
 		required: [true, "Product price is required"],
