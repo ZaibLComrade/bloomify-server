@@ -11,7 +11,7 @@ export const productSchema = new Schema<IProduct>({
 		type: String,
 		requried: [true, "Image link is required"],
 	},
-	category: categorySchema, // TODO: Update Category Schema
+	category: categorySchema,
 	price: {
 		type: Number,
 		required: [true, "Product price is required"],
