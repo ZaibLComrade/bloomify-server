@@ -20,7 +20,7 @@ const addressSchema = new Schema<Address>({
 	}
 })
 
-const userSchema = new Schema<IUser>({
+export const userSchema = new Schema<IUser>({
 	name: { 
 		type: String,
 		required: [true, "Name is required"],

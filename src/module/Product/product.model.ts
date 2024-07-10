@@ -2,7 +2,7 @@ import { Schema, model } from "mongoose";
 import { IProduct } from "./product.interface";
 import {categorySchema} from "../Category/category.modle";
 
-const productSchema = new Schema<IProduct>({
+export const productSchema = new Schema<IProduct>({
 	title: {
 		type: String,
 		required: [true, "Product title is requried"],
